@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+h1{
+    padding: 10px;
+    margin: 5px auto;
+    color: rgb(65, 11, 65);
+}
+body{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+body p{
+    background-color: rgb(199, 203, 207);
+    color: rgb(48, 13, 48);
+}
+main p{
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(208, 215, 218);
+}
+
+main ul{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: 'Lobster', cursive;
+    
+}
+
+main ul li:nth-child(odd)
+{
+    background-color: rgb(178, 164, 192);
+}
+
+main ul li:nth-child(even)
+{
+    background-color: rgb(216, 170, 208);
+}
+
+
+header{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+.photo
+{
+    width: 300px;
+    margin: 20px 250px;
+    display: block;
+}
+p{
+    color: rgb(29, 78, 58);
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(170, 169, 169);
+}
+
+a:hover{
+    background-color: rgb(228, 212, 225);
+}
+
+footer{
+    text-align: center;
+}
+
+footer ul li{
+    display: inline-block;
+    margin-left: 10px;
+    
+}
