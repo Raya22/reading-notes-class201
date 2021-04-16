@@ -124,18 +124,19 @@ funTravel(travel);
 
 for(let i=0;i<4;i++)
 {
-  let num1=prompt('I have a number in my mind , try to guess and type what is the number');
-  if(num1 === 2){
-    alert('yeess that\'s right');
-    counter++;
-    break;
-  }
+  let num1=prompt('I have a number in my mind  it is even between 1-10 , try to guess and type what is the number');
 
   if(num1 > 2)
   {
     alert('it\'s too high');
   }
-  else{
+  else if (num1 == 2)
+  {
+    alert('yeess that\'s right');
+    counter++;
+    break;
+  }
+  else {
     alert('it\'s too low');
   }
 
@@ -148,13 +149,37 @@ console.log(travelarray);
 
 let arrchoice=prompt('try to guess where I traveled before ').toLowerCase();
 
-while (arrchoice !== 'qatar' && arrchoice !== 'lebanon' && arrchoice !== 'syria' && arrchoice !== 'kuwait' && arrchoice !== 'oman')
-{
-  for(let k=0 ; k<6 ;k++){
-
-    arrchoice=prompt('try again to guess where I traveled before ').toLowerCase();
-    break;
-
+  for(let k=0 ; k<5 ;k++){
+   
+    switch(arrchoice)
+    {
+    case 'qatar' :
+      alert('yes that is right');
+      counter++;
+      k=5;
+      break;
+    case 'lebanon':
+      alert('yes that is right');
+      counter++;
+      k=5;
+      break;
+    case 'syria':
+      alert('yes that is right');
+      counter++;
+      break;
+      k=5;
+    case 'kuwait':
+      alert('yes that is right');
+      counter++;
+      k=5;
+      break;
+    case 'oman':
+      alert('yes that is right');
+      counter++;
+      k=5;
+      break;
+    default:
+      arrchoice=prompt('try to guess where I traveled before ').toLowerCase();
   }
 
 }
