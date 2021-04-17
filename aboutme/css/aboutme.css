@@ -17,7 +17,9 @@ body p{
 main p{
     margin-top: 50px;
     color: rgb(0, 0, 0);
-    background-color: rgb(208, 215, 218);
+    text-align: left;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
 }
 
 main ul{
